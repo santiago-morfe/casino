@@ -1,0 +1,81 @@
+button {
+    background: linear-gradient(to bottom, #e2b63c 5%, #563f00 100%);
+    background-color: #ffd970a7;
+    border-radius: 14px;
+    border: 3px solid #523900;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 11px;
+    width: 140px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #6b4e00 5%, #ffd970 100%);
+    background-color: #6b4e00;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+p {
+    color: #ffffffe0;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+h3 {
+    color: #fffffff0;
+    font-size: 24px;
+    margin: 0px;
+    letter-spacing: 3px;
+}
+
+
+#mesa {
+    margin-top: 5ch;
+    margin-bottom: 10ch;
+}
+
+#cartera {
+    bottom: 8ch;
+    margin-bottom: 15ch;
+}
+
+body {
+    margin: 0%;
+    text-align: center;
+    background-image: url("fondo.jpg");
+    background-size: contain;
+    font-family: Arial;
+}
+
+#instructivo>h2 {
+    color: #79161688;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-bottom: 16px;
+    font-family: Arial;
+}
+
+#instructivo>p {
+    font-family: Arial;
+    font-size: 13.5px;
+    letter-spacing: 0.2px;
+    color: #d5d5d570;
+    margin-bottom: 15px;
+    ;
+}
+
+#instructivo {
+    margin-bottom: 60px;
+}
