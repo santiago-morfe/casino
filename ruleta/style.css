@@ -1,0 +1,27 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite linear;
+}
+
+.slider-content div {
+    padding: 10px;
+    width: 33.33%;
+    height: auto;
+    background-color: blue ;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
