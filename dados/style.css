@@ -1,4 +1,29 @@
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dados-container {
+    min-width: 90%;
+    min-height: 70vh;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 10);
+}
+
 .dado {
+    margin: 5px;
     background: linear-gradient(to bottom, #e2b63c 5%, #563f00 100%);
     background-color: #ffd970a7;
     border-radius: 20px;
@@ -35,4 +60,34 @@
         transform: scale(1) rotateY(1080deg);
     }
 }
+input{
+    display: block;
+    transform-origin: center center;
+}
+button {    
+    background: linear-gradient(to bottom, #e2b63c 5%, #563f00 100%);
+    background-color: #ffd970a7;
+    border-radius: 14px;
+    border: 3px solid #523900;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 11px;
+    width: 140px;
+    display: inline;
+    text-decoration: none;
+    transform-origin: center center;
+}
 
+button:hover {
+    background: linear-gradient(to bottom, #6b4e00 5%, #ffd970 100%);
+    background-color: #6b4e00;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
