@@ -26,7 +26,7 @@ function tirarDados() {
                 document.documentElement.style.setProperty('--random', Math.random());
             }, 460);
 
-        }, i * 720);
+        }, 1000 (i * 720));
     }
 
 }
