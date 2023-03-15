@@ -11,6 +11,7 @@ btnTirar.addEventListener("click", () => tirarDados());
 function tirarDados() {
 
     dadosContainer.innerHTML = "";
+    dadosContainer.classList.add("shake")
 
     for (let i = 0; i < document.getElementById("nDados").value; i++) {
         setTimeout(function () {
@@ -28,5 +29,9 @@ function tirarDados() {
 
         }, 1000 + (i * 950));
     }
+    setTimeout(function () {
+        dadosContainer.classList.remove("shake")
+    },1000)
+
 
 }
