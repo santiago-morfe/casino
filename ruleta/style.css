@@ -1,27 +1,87 @@
-.slider {
-    width: 100%;
-    overflow: hidden;
+body {
+    margin: 0%;
+    text-align: center;
+    background-image: url("fondo.jpg");
+    background-size: contain;
+    font-family: Arial;
 }
 
-.slider-content {
+#ruleta-container {
     display: flex;
-    width: 300%;
-    animation: slide 10s infinite linear;
+    background-color: #1616169a;
+    border: 3px solid #818181;
 }
 
-.slider-content div {
-    padding: 10px;
-    width: 33.33%;
-    height: auto;
-    background-color: blue ;
+#ruleta-container>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #ffffffe0;
+    justify-content: center;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    animation: ruleta 0.6s infinite;
 }
 
-@keyframes slide {
+p {
+    color: #ffffffe0;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+@keyframes ruleta {
+
     0% {
-        transform: translateX(0);
+        transform: scale(0);
+    }
+
+    1% {
+        transform: translateX(0vw) scale(0.8) rotateY(90deg);
+    }
+
+
+    50% {
+        transform: translateX(40vw) scale(1.5) rotateY(0deg);
+    }
+
+    99% {
+        transform: translate(80vw) scale(0.8) rotateY(-90deg);
     }
 
     100% {
-        transform: translateX(-200%);
+        transform: scale(0);
     }
+
+}
+
+
+button {
+    background: linear-gradient(to bottom, #e2b63c 5%, #563f00 100%);
+    background-color: #ffd970a7;
+    border-radius: 14px;
+    border: 3px solid #523900;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 11px;
+    width: 140px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #6b4e00 5%, #ffd970 100%);
+    background-color: #6b4e00;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
 }

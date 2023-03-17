@@ -1,8 +1,6 @@
 const montoCarteraVista = document.getElementById('monto-cartera');
 const montoMesaVista = document.getElementById('monto-mesa');
 
-
-
 let montoCartera = localStorage.getItem("montoCartera");
 if (montoCartera == null) {
     montoCartera = 0;
@@ -19,7 +17,6 @@ if (dobla == null) {
 }
 
 printNumeros();
-
 
 document.getElementById('recupera').addEventListener('click', () => {
     recupera();
