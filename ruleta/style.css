@@ -4,12 +4,14 @@ body {
     background-image: url("fondo.jpg");
     background-size: contain;
     font-family: Arial;
+    align-items: center;
 }
 
 #ruleta-container {
     display: flex;
     background-color: #1616169a;
     border: 3px solid #818181;
+    width: 300px;
 }
 
 #ruleta-container>div {
@@ -22,8 +24,23 @@ body {
     width: 150px;
     height: 150px;
     margin: 0px;
-    animation: ruleta 0.6s infinite;
 }
+
+.Start{
+    animation: ruletaStart 0.5s infinite;
+}
+
+.Stoping {
+    animation: ruletaStop 0.8s ;
+}
+
+.Stop{
+    transform: translate(50%) scale(2);
+}
+
+
+
+
 
 p {
     color: #ffffffe0;
@@ -33,32 +50,29 @@ p {
     margin-bottom: 7px;
 }
 
-@keyframes ruleta {
-
+@keyframes ruletaStart {
     0% {
-        transform: scale(0);
+        transform: translate(-50%)  rotateY(90deg) ;
     }
 
-    1% {
-        transform: translateX(0vw) scale(0.8) rotateY(90deg);
+    50%{
+        transform: translate(50%) rotateY(0deg) scale(1.7);
     }
-
-
-    50% {
-        transform: translateX(40vw) scale(1.5) rotateY(0deg);
+    100% {
+        transform: translateX(150%) rotateY(-90deg) ;
     }
+}
 
-    99% {
-        transform: translate(80vw) scale(0.8) rotateY(-90deg);
+@keyframes ruletaStop {
+    0% {
+        transform: translate(-50%) rotateY(90deg);
     }
 
     100% {
-        transform: scale(0);
+        transform: translate(50%) rotateY(0deg) scale(2);
     }
 
 }
-
-
 button {
     background: linear-gradient(to bottom, #e2b63c 5%, #563f00 100%);
     background-color: #ffd970a7;
